@@ -200,7 +200,7 @@ a {
 }
 
 .section:nth-child(even) .card {
-  background: #222;
+  background: #000;
   color: var(--text-color);
 }
 
@@ -220,12 +220,12 @@ a {
 
 .card p {
   font-size: 0.95rem;
-  color: #666;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
 .section:nth-child(even) .card p {
-  color: #ddd;
+  color: #fff;
 }
 
 .card .btn {
