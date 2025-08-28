@@ -2,11 +2,11 @@
    Root Variables
 ========================= */
 :root {
-  --primary-color: #000000; /* Black for modern corporate look */
-  --secondary-color: #333333; /* Dark gray for sections */
+  --primary-color: #000000; /* Black for header/footer */
+  --secondary-color: #333333; /* Dark section background */
   --accent-color: #e94560; /* Highlight color */
-  --text-color: #ffffff; /* White text for dark sections */
-  --body-color: #f9f9f9; /* Light background */
+  --text-color: #ffffff; /* Text color for dark backgrounds */
+  --body-color: #f9f9f9; /* Light background for page */
 }
 
 /* =========================
@@ -20,11 +20,15 @@
 
 html, body {
   height: 100%;
-  overflow-x: hidden;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background: var(--body-color);
   color: #222;
   line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* =========================
@@ -40,15 +44,7 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo a {
-  color: var(--text-color);
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.5rem;
+  justify-content: center;
 }
 
 .nav-links {
@@ -59,12 +55,13 @@ header {
 
 .nav-links a {
   color: var(--text-color);
-  text-decoration: none;
   font-size: 1rem;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--accent-color);
 }
 
@@ -72,8 +69,8 @@ header {
    Hero Section
 ========================= */
 .hero {
-  background: #000 url('../img/hero-bg.jpg') center/cover no-repeat;
-  min-height: 80vh; /* ensures scrollable */
+  background: #000 url('assets/img/hero-bg.jpg') center/cover no-repeat;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +81,6 @@ header {
 
 .hero-content h1 {
   font-size: 3rem;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
@@ -98,36 +94,31 @@ header {
   padding: 0.8rem 1.5rem;
   background: var(--accent-color);
   color: var(--text-color);
-  text-decoration: none;
-  border-radius: 3px;
+  border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background: #d63b55; /* Slightly darker accent on hover */
+  background: #d63b55;
 }
 
 /* =========================
-   Page Sections
+   About Preview Section
 ========================= */
-.section {
+.about-preview {
   padding: 4rem 2rem;
-  max-width: 1100px;
+  max-width: 900px;
   margin: auto;
+  text-align: center;
 }
 
-.section:nth-child(even) {
-  background: var(--secondary-color);
-  color: var(--text-color);
-}
-
-.section h2 {
+.about-preview h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.section p {
+.about-preview p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
@@ -146,20 +137,6 @@ footer {
 /* =========================
    Responsive
 ========================= */
-@media screen and (max-width: 1024px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1.1rem;
-  }
-
-  .nav-links {
-    gap: 1.5rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .hero-content h1 {
     font-size: 2rem;
