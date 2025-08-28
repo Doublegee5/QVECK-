@@ -1,3 +1,107 @@
+/* =========================
+   Root Variables
+========================= */
+:root {
+  --primary-color: #000000;      /* Header/Footer */
+  --secondary-color: #333333;    /* Alternate section background */
+  --accent-color: #e94560;       /* Buttons & highlights */
+  --text-color: #ffffff;         /* Text on dark backgrounds */
+  --body-color: #f9f9f9;         /* Page background */
+}
+
+/* =========================
+   Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: var(--body-color);
+  color: #222;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+  background: var(--primary-color);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent-color);
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  background: #000 url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-color);
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--accent-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #d63b55;
+}
 
 /* =========================
    Sections (About, Services, Blog, Contact)
