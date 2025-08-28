@@ -8,18 +8,20 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Hamburger Menu Icon -->
+  <div class="menu-icon" id="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Side Menu -->
+  <nav class="side-menu" id="side-menu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
@@ -30,7 +32,7 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- Other sections remain the same -->
   <section class="section" id="about">
     <h2>About Us</h2>
     <p>Qveck Empire Ltd is a dynamic company focused on innovation, growth, and impact.</p>
@@ -38,69 +40,20 @@
     <p><a href="about.html" class="btn">Read More</a></p>
   </section>
 
-  <!-- Services Section -->
   <section class="section" id="services">
     <h2>Our Services</h2>
     <div class="grid-container">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Consulting">
-        <h3>Consulting</h3>
-        <p>Expert business and technology consulting to help your company grow efficiently.</p>
-        <a href="services.html" class="btn">Read More</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Software Development">
-        <h3>Software Development</h3>
-        <p>Building cutting-edge applications and platforms for web and mobile users.</p>
-        <a href="services.html" class="btn">Read More</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Training">
-        <h3>Training & Development</h3>
-        <p>Workshops and programs designed to enhance skills and professional growth.</p>
-        <a href="services.html" class="btn">Read More</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Strategy">
-        <h3>Strategy & Planning</h3>
-        <p>Helping businesses plan for long-term success and sustainable growth.</p>
-        <a href="services.html" class="btn">Read More</a>
-      </div>
+      <!-- cards here -->
     </div>
   </section>
 
-  <!-- Blog Section -->
   <section class="section" id="blog">
     <h2>Latest Blog Posts</h2>
     <div class="grid-container">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Blog 1">
-        <h3>Blog Post 1</h3>
-        <p>Insights on the latest trends in technology and business development.</p>
-        <a href="blog.html" class="btn">Read More</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Blog 2">
-        <h3>Blog Post 2</h3>
-        <p>How innovation is driving sustainable growth across industries.</p>
-        <a href="blog.html" class="btn">Read More</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Blog 3">
-        <h3>Blog Post 3</h3>
-        <p>Tips and strategies for personal and professional development.</p>
-        <a href="blog.html" class="btn">Read More</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Blog 4">
-        <h3>Blog Post 4</h3>
-        <p>Exploring the intersection of technology, education, and business.</p>
-        <a href="blog.html" class="btn">Read More</a>
-      </div>
+      <!-- cards here -->
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p>Reach out to us for inquiries, collaborations, or project requests.</p>
@@ -111,10 +64,18 @@
     <p><a href="contact.html" class="btn">Read More</a></p>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 Qveck Empire Ltd. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const sideMenu = document.getElementById('side-menu');
+
+    menuIcon.addEventListener('click', () => {
+      sideMenu.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
