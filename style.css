@@ -20,8 +20,8 @@
 
 html, body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: var(--body-color);
-  color: #222;
+  background: var(--primary-color);
+  color: #fff;
   line-height: 1.6;
   scroll-behavior: smooth;
   overflow-x: hidden;
