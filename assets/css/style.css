@@ -32,7 +32,7 @@ a {
 }
 
 /* =========================
-   Hamburger Menu
+   Hamburger Menu/logo
 ========================= */
 .menu-icon {
   width: 35px;
@@ -46,6 +46,13 @@ a {
   z-index: 1001;
   cursor: pointer;
 }
+
+.logo img {
+  height: 20px;   /* Adjust as needed */
+  width: auto;
+   position:fixed
+   top:20px
+   right:20px
 
 .menu-icon div {
   height: 4px;
@@ -98,9 +105,6 @@ a {
 /* =========================
    Hero/logo Section
 ========================= */
-.logo img {
-  height: 20px;   /* Adjust as needed */
-  width: auto;
 }
 .hero {
   background: #000 url('https://via.placeholder.com/1600x900') center/cover no-repeat;
