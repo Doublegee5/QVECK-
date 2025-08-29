@@ -98,7 +98,7 @@ a {
 /* =========================
    Logo Section
 ========================= */
-.logo img {
+.logo {
   height: 20px;   /* Adjust as needed */
   width: auto;
   text-align: left;  /* aligns inside the container */
