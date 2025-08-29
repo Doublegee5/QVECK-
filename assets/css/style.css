@@ -98,15 +98,14 @@ a {
 /* =========================
    Logo Section
 ========================= */
-header {
-  display: flex;
-  justify-content: space-between; /* pushes nav left, logo right */
-  align-items: center;
-  padding: 10px 20px;
+.logo {
+  position: absolute;   /* remove from normal flow */
+  top: 10px;            /* distance from top */
+  right: 20px;          /* distance from right */
 }
 
 .logo {
-  height: 40px; /* reduce logo size */
+  height: 20px; /* reduce logo size */
   width: auto;
 }
 
