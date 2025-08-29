@@ -98,10 +98,16 @@ a {
 /* =========================
    Logo Section
 ========================= */
+header {
+  display: flex;
+  justify-content: space-between; /* pushes nav left, logo right */
+  align-items: center;
+  padding: 10px 20px;
+}
+
 .logo {
-  height: 20px;   /* Adjust as needed */
+  height: 40px; /* reduce logo size */
   width: auto;
-  text-align: left;  /* aligns inside the container */
 }
 
 /* =========================
