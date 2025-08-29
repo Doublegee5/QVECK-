@@ -30,9 +30,17 @@ html, body {
 a {
   text-decoration: none;
 }
+/*Qveck logo*/
+.logo img {
+  height: 20px;   /* Adjust as needed */
+  width: auto;
+   position:fixed
+   top:20px
+   right:20px
+}
 
 /* =========================
-   Hamburger Menu/logo
+   Hamburger Menu
 ========================= */
 .menu-icon {
   width: 35px;
@@ -46,14 +54,6 @@ a {
   z-index: 1001;
   cursor: pointer;
 }
-
-.logo img {
-  height: 20px;   /* Adjust as needed */
-  width: auto;
-   position:fixed
-   top:20px
-   right:20px
-
 .menu-icon div {
   height: 4px;
   background: var(--text-color);
@@ -103,7 +103,7 @@ a {
 }
 
 /* =========================
-   Hero/logo Section
+   Hero Section
 ========================= */
 }
 .hero {
