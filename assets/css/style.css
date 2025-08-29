@@ -96,8 +96,12 @@ a {
 }
 
 /* =========================
-   Hero Section
+   Hero/logo Section
 ========================= */
+.logo img {
+  height: 60px;   /* Adjust as needed */
+  width: auto;
+}
 .hero {
   background: #000 url('https://via.placeholder.com/1600x900') center/cover no-repeat;
   min-height: 80vh;
