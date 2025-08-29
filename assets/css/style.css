@@ -30,12 +30,6 @@ html, body {
 a {
   text-decoration: none;
 }
-/*Qveck logo*/
-.logo img {
-  height: 20px;   /* Adjust as needed */
-  width: auto;
-  text-align: right;  /* aligns inside the container */
-}
 
 /* =========================
    Hamburger Menu
@@ -98,6 +92,16 @@ a {
 
 .side-menu.active {
   left: 0;
+}
+
+
+/* =========================
+   Logo Section
+========================= */
+.logo img {
+  height: 20px;   /* Adjust as needed */
+  width: auto;
+  text-align: right;  /* aligns inside the container */
 }
 
 /* =========================
