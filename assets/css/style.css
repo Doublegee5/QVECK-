@@ -101,13 +101,12 @@ a {
 .logo img {
   height: 20px;   /* Adjust as needed */
   width: auto;
-  text-align: right;  /* aligns inside the container */
+  text-align: left;  /* aligns inside the container */
 }
 
 /* =========================
    Hero Section
 ========================= */
-}
 .hero {
   background: #000 url('https://via.placeholder.com/1600x900') center/cover no-repeat;
   min-height: 80vh;
