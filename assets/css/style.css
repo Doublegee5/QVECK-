@@ -34,10 +34,9 @@ a {
 .logo img {
   height: 20px;   /* Adjust as needed */
   width: auto;
-  display: flex;
-  justify-content: flex-end;  /* pushes content to the right */
-  align-items: center;        /* centers vertically */
+  text-align: right;  /* aligns inside the container */
 }
+
 /* =========================
    Hamburger Menu
 ========================= */
