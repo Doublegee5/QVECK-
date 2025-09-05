@@ -43,7 +43,7 @@ a {
 }
 
 .logo img {
-  height: 30px; /* reduce logo size */
+  height: 40px; /* reduce logo size */
   width: auto;
 }
 
@@ -85,7 +85,7 @@ a {
   left: -250px;
   width: 250px;
   height: 100%;
-  background: var(--accent-color);
+  background: var(--text-color);
   display: flex;
   flex-direction: column;
   padding-top: 80px;
@@ -95,7 +95,7 @@ a {
 
 .side-menu a {
   padding: 15px 25px;
-  color: var(--text-color);
+  color: var(--background-color);
   font-size: 1.2rem;
   font-weight: 500;
   transition: background 0.2s ease, color 0.2s ease;
