@@ -64,7 +64,7 @@ a {
 }
 .menu-icon div {
   height: 4px;
-  background: var(--background-color);
+  background: var(--text-color);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -85,7 +85,7 @@ a {
   left: -250px;
   width: 250px;
   height: 100%;
-  background: var(--text-color);
+  background: var(--background-color);
   display: flex;
   flex-direction: column;
   padding-top: 80px;
@@ -95,7 +95,7 @@ a {
 
 .side-menu a {
   padding: 15px 25px;
-  color: var(--background-color);
+  color: var(--text-color);
   font-size: 1.2rem;
   font-weight: 500;
   transition: background 0.2s ease, color 0.2s ease;
