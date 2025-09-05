@@ -85,7 +85,7 @@ a {
   left: -250px;
   width: 250px;
   height: 100%;
-  background: var(--text-color);
+  background: var(--background-color);
   display: flex;
   flex-direction: column;
   padding-top: 80px;
