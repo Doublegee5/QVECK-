@@ -115,14 +115,6 @@ a { text-decoration: none; color: inherit; }
 /* =========================
    Sections 
 ========================= */
-.section {
-  padding: 6rem 2rem;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  color: #fff; /* ensure white text on image backgrounds */
-  text-align: center;
-}
 
 
 #about {
