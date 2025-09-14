@@ -2,11 +2,11 @@
    Root Variables
 ========================= */
 :root {
-  --primary-color: #000000;      
-  --secondary-color: #000000;    
-  --accent-color: #e94560;       
-  --text-color: #ffffff;         
-  --body-color: #000000;         
+  --primary-color: #000000;
+  --secondary-color: #000000;
+  --accent-color: #e94560;
+  --text-color: #ffffff;
+  --body-color: #000000;
 }
 
 /* =========================
@@ -31,19 +31,17 @@ a {
   text-decoration: none;
 }
 
-
-
 /* =========================
    Logo Section
 ========================= */
 .logo {
-  position: absolute;   /* remove from normal flow */
-  top: 10px;            /* distance from top */
-  right: 20px;          /* distance from right */
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 
 .logo img {
-  height: 40px; /* reduce logo size */
+  height: 40px;
   width: auto;
 }
 
@@ -62,6 +60,7 @@ a {
   z-index: 1001;
   cursor: pointer;
 }
+
 .menu-icon div {
   height: 4px;
   background: var(--text-color);
@@ -85,7 +84,7 @@ a {
   left: -250px;
   width: 250px;
   height: 100%;
-  background: var(--background-color);
+  background: var(--primary-color);
   display: flex;
   flex-direction: column;
   padding-top: 80px;
@@ -196,6 +195,19 @@ a {
   color: #ffffff;
 }
 
+/* =========================
+   Images
+========================= */
+.section-img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* Cards */
 .grid-container {
   display: grid;
@@ -220,11 +232,13 @@ a {
 }
 
 .card img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  margin: 0 auto 1.2rem;
+  border-radius: 10px;
+  display: block;
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1.2rem;
 }
 
 .card h3 {
