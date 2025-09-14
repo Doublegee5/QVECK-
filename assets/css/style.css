@@ -2,11 +2,9 @@
    Root Variables
 ========================= */
 :root {
-  --primary-color: #000000;
-  --secondary-color: #000000;
-  --accent-color: #e94560;
-  --text-color: #ffffff;
-  --body-color: #000000;
+  --primary-color: #000000;      
+  --accent-color: #e94560;       
+  --text-color: #ffffff;         
 }
 
 /* =========================
@@ -21,7 +19,7 @@
 html, body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background: var(--primary-color);
-  color: #fff;
+  color: var(--text-color);
   line-height: 1.6;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -29,17 +27,17 @@ html, body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* =========================
-   Logo Section
+   Logo
 ========================= */
 .logo {
   position: absolute;
   top: 10px;
   right: 20px;
 }
-
 .logo img {
   height: 40px;
   width: auto;
@@ -60,14 +58,12 @@ a {
   z-index: 1001;
   cursor: pointer;
 }
-
 .menu-icon div {
   height: 4px;
   background: var(--text-color);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
-
 .menu-icon.open div:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
@@ -77,34 +73,27 @@ a {
 .menu-icon.open div:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
-
 .side-menu {
   position: fixed;
   top: 0;
   left: -250px;
   width: 250px;
   height: 100%;
-  background: var(--primary-color);
+  background: #000;
   display: flex;
   flex-direction: column;
   padding-top: 80px;
   transition: left 0.3s ease;
   z-index: 1000;
 }
-
 .side-menu a {
   padding: 15px 25px;
   color: var(--text-color);
   font-size: 1.2rem;
-  font-weight: 500;
-  transition: background 0.2s ease, color 0.2s ease;
 }
-
 .side-menu a:hover {
   background: var(--accent-color);
-  color: var(--text-color);
 }
-
 .side-menu.active {
   left: 0;
 }
@@ -113,166 +102,64 @@ a {
    Hero Section
 ========================= */
 .hero {
-  background: #000 url('https://via.placeholder.com/1600x900') center/cover no-repeat;
-  min-height: 80vh;
+  background: url('assets/css/863EF021-6E9C-4FAE-8DAF-5D865AE497E1.png') center/cover no-repeat;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--text-color);
-  padding: 0 2rem;
 }
-
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background: var(--accent-color);
-  color: var(--text-color);
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #000000;
-}
-
 /* =========================
-   Sections
+   Sections Backgrounds
 ========================= */
 .section {
   padding: 6rem 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.section:nth-child(even) {
-  background: var(--secondary-color);
-  color: var(--text-color);
-}
-
-.section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+  color: #fff;
   text-align: center;
-  letter-spacing: 1px;
-  position: relative;
 }
-
-.section h2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: var(--accent-color);
-  margin: 1rem auto 0;
-  border-radius: 2px;
+.about {
+  background: url('assets/css/863EF021-6E9C-4FAE-8DAF-5D865AE497E1.png') center/cover no-repeat;
 }
-
-.section p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.8;
-  color: #000;
+.services {
+  background: url('assets/css/IMG_0211.jpeg') center/cover no-repeat;
 }
-
-.section:nth-child(even) p {
-  color: #ffffff;
+.blog {
+  background: url('assets/css/IMG_0227.jpeg') center/cover no-repeat;
+}
+.contact {
+  background: url("assets/css/Blog Section__•_Image Style_ Smart + innovative.__•_Blog 1 → Laptop + notebook + coffee.jpeg") center/cover no-repeat;
 }
 
 /* =========================
-   Images
+   Cards
 ========================= */
-.section-img {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* Cards */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
-
 .card {
-  background: #000;
+  background: rgba(0,0,0,0.7);
+  padding: 2rem;
   border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 2rem 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section:nth-child(even) .card {
-  background: #000;
-  color: var(--text-color);
-}
-
-.card img {
-  width: 100%;
-  max-width: 220px;
-  height: auto;
-  margin: 0 auto 1.2rem;
-  border-radius: 10px;
-  display: block;
-  object-fit: cover;
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.8rem;
-  font-weight: 600;
-}
-
-.card p {
-  font-size: 0.95rem;
   color: #fff;
-  margin-bottom: 1rem;
-}
-
-.section:nth-child(even) .card p {
-  color: #fff;
-}
-
-.card .btn {
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
 
 /* =========================
    Footer
 ========================= */
 footer {
-  background: var(--primary-color);
+  background: #000;
   color: var(--text-color);
   text-align: center;
   padding: 2rem 1rem;
