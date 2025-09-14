@@ -136,8 +136,7 @@ a { text-decoration: none; color: inherit; }
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.section-img {
+
   width: 100%;
   max-width: 1000px;
   height: auto;
@@ -151,6 +150,15 @@ a { text-decoration: none; color: inherit; }
   background-position: center;
   background-size:500px;
   background-repeat: no-repeat;
+
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
 }
 
 #contact {
