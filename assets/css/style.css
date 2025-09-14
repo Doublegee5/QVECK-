@@ -68,6 +68,26 @@
 .side-menu a:hover { background: var(--accent-color); }
 .side-menu.active { left: 0; }
 
+
+
+/* =========================
+   Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+a { text-decoration: none; color: inherit; }
+
 /* =========================
    Hero Section 
 ========================= */
