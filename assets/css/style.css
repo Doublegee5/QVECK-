@@ -136,27 +136,21 @@ a { text-decoration: none; color: inherit; }
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  padding: 6rem 2rem;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  color: #fff; /* ensure white text on image backgrounds */
-  text-align: center;
 }
-
+.section-img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
 #blog {
   background-image: url("assets/css/IMG_0227.jpeg");
   background-position: center;
   background-size:500px;
   background-repeat: no-repeat;
-
-  padding: 6rem 2rem;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  color: #fff; /* ensure white text on image backgrounds */
-  text-align: center;
 }
 
 #contact {
