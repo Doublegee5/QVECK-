@@ -130,14 +130,14 @@ a { text-decoration: none; color: inherit; }
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* make images cover */
 #services {
   background-image: url("assets/css/IMG_0211.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* make images cover */
 #blog {
   background-image: url("assets/css/IMG_0227.jpeg");
   background-position: center;
@@ -145,8 +145,7 @@ a { text-decoration: none; color: inherit; }
   background-repeat: no-repeat;
 }
 
-/* contact file name contains special characters — browser may require the exact name.
-   If it doesn't load, rename the file to contact-bg.jpeg and update the URL below. */
+/* make images cover */
 #contact {
   background-image: url("assets/css/Blog Section__•_Image Style_ Smart + innovative.__•_Blog 1 → Laptop + notebook + coffee.jpeg");
   background-position: center;
@@ -154,7 +153,6 @@ a { text-decoration: none; color: inherit; }
   background-repeat: no-repeat;
 }
 
-/* section image helper so inline images don't overflow */
 .section-img {
   width: 100%;
   max-width: 1000px;
