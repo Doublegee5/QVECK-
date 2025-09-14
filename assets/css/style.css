@@ -88,7 +88,7 @@ a { text-decoration: none; color: inherit; }
 .side-menu.active { left: 0; }
 
 /* =========================
-   Hero Section (no background image per your note)
+   Hero Section 
 ========================= */
 .hero {
   background: linear-gradient(180deg,#000 0%, #0b0b0b 100%);
@@ -112,8 +112,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* =========================
-   Sections (background images using your files)
-   NOTE: you provided these files under assets/css/
+   Sections 
 ========================= */
 .section {
   padding: 6rem 2rem;
@@ -142,7 +141,7 @@ a { text-decoration: none; color: inherit; }
 #blog {
   background-image: url("assets/css/IMG_0227.jpeg");
   background-position: center;
-  background-size: cover;
+  background-size:500px;
   background-repeat: no-repeat;
 }
 
