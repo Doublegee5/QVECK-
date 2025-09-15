@@ -177,10 +177,10 @@ a { text-decoration: none; color: inherit; }
 
 /* small image thumbnails in cards */
 .card img {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
-  border-radius: 10%,
+  border-radius: 10px,
   margin-bottom: 1rem;
 }
 /* Footer */
