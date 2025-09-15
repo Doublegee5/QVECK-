@@ -124,8 +124,6 @@ a { text-decoration: none; color: inherit; }
   text-align: center;
 }
 
-
-
 #about {
   background-image: url("assets/css/863EF021-6E9C-4FAE-8DAF-5D865AE497E1.png");
   background-position: center;
@@ -138,28 +136,12 @@ a { text-decoration: none; color: inherit; }
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-  border-radius: 8px;
-  object-fit: cover;
 }
 #blog {
   background-image: url("assets/css/IMG_0227.jpeg");
   background-position: center;
   background-size:500px;
   background-repeat: no-repeat;
-
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-  border-radius: 8px;
-  object-fit: cover;
 }
 #contact {
   background-image: url("assets/css/Blog Section__•_Image Style_ Smart + innovative.__•_Blog 1 → Laptop + notebook + coffee.jpeg");
@@ -195,8 +177,8 @@ a { text-decoration: none; color: inherit; }
 
 /* small image thumbnails in cards */
 .card img {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50;
   margin-bottom: 1rem;
