@@ -179,7 +179,7 @@ a { text-decoration: none; color: inherit; }
 .card img {
   width: 450px;
   height: 450px;
-  object-fit: cover;
+  object-fit: center;
   border-radius: 10px,
   margin-bottom: 1rem;
 }
