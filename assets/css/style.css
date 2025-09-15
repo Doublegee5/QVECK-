@@ -159,8 +159,6 @@ a { text-decoration: none; color: inherit; }
   border-radius: 8px;
   object-fit: cover;
 }
-}
-
 #contact {
   background-image: url("assets/css/Blog Section__•_Image Style_ Smart + innovative.__•_Blog 1 → Laptop + notebook + coffee.jpeg");
   background-position: center;
@@ -175,31 +173,6 @@ a { text-decoration: none; color: inherit; }
   margin: 2rem auto;
   border-radius: 8px;
   object-fit: cover;
-}
-
-/* overlay for cards so text is readable on top of backgrounds */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-  z-index: 1;
-}
-.card {
-  background: var(--card-bg);
-  padding: 2rem;
-  border-radius: 10px;
-  color: #fff;
-  text-align: center;
-}
-
-/* small image thumbnails in cards */
-.card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
 }
 
 /* Footer */
