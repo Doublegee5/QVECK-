@@ -177,7 +177,7 @@ a { text-decoration: none; color: inherit; }
 
 /* small image thumbnails in cards */
 .card img {
- max-width: 150%;
+ max-width: 120%;
   height: 450px;
   object-fit: cover;
   border-radius: 10px,
