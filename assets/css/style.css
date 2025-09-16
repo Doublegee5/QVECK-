@@ -38,7 +38,7 @@
 }
 .menu-icon div {
   height: 4px;
-  background: var(--primary-color);
+  background: var(--text-color);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
