@@ -167,31 +167,30 @@ a { text-decoration: none; color: inherit; }
 }
 
 .card {
-  position: relative;      /* allows overlay positioning */
+  position: relative;        /* allows overlay positioning */
   border-radius: 10px;
-  overflow: hidden;        /* keeps image corners rounded */
-  color: #000;
+  overflow: hidden;          /* keeps image corners rounded */
+  color: #fff;               /* white text for contrast */
   text-align: center;
 }
 
 .card img {
-  width: 100%;             /* fills the card width */
-  height: 400px;           /* fixed height */
-  object-fit: cover;
-  display: block;          /* removes bottom gap */
+  width: 100%;               /* fills the card width */
+  height: 400px;             /* fixed height */
+  object-fit: cover;         /* avoids stretching */
+  display: block;
 }
 
-/* overlay for text */
 .card .overlay {
   position: absolute;
-  bottom: 10;
+  bottom: 0;                 /* sits at bottom */
   left: 0;
   right: 0;
-  padding: 2.5rem 2rem;
+  padding: 2rem;             /* breathing room for text */
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.7) 0%,   /* darker at bottom */
-    rgba(0, 0, 0, 0.0) 100%  /* transparent top */
+    rgba(0, 0, 0, 0.0) 100%  /* fades upward */
   );
 }
 /* Footer */
