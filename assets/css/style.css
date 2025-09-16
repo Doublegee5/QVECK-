@@ -80,8 +80,8 @@
 }
 html, body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--text-color);
+  color: var(--primary-color);
   line-height: 1.6;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -176,7 +176,7 @@ a { text-decoration: none; color: inherit; }
 
 .card img {
   width: 100%;             /* fills the card width */
-  height: 450px;           /* fixed height */
+  height: 400px;           /* fixed height */
   object-fit: cover;
   display: block;          /* removes bottom gap */
 }
