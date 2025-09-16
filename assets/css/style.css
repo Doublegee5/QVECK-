@@ -107,7 +107,7 @@ a { text-decoration: none; color: inherit; }
   display: inline-block;
   padding: 0.8rem 1.5rem;
   background: var(--accent-color);
-  color: var(--text-color);
+  color: var(--primary-color);
   border-radius: 5px;
   font-weight: bold;
 }
