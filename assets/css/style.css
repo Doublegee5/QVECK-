@@ -5,7 +5,7 @@
   --primary-color: #ffffff;
   --secondary-color: #000000;
   --accent-color: #e94560;
-  --text-color: #ffffff;
+  --text-color: #000000;
   --card-bg: rgba(0,0,0,0.72);
 }
 /* =========================
@@ -80,7 +80,7 @@
 }
 html, body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: var(--text-color);
+  background: var(--primary-color);
   color: var(--primary-color);
   line-height: 1.6;
   scroll-behavior: smooth;
