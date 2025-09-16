@@ -158,8 +158,6 @@ a { text-decoration: none; color: inherit; }
   border-radius: 8px;
   object-fit: cover;
 }
-
-/* overlay for cards so text is readable on top of backgrounds */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -167,22 +165,34 @@ a { text-decoration: none; color: inherit; }
   margin-top: 3rem;
   z-index: 1;
 }
+
 .card {
-  background: var(--card-bg);
-  padding: 2rem;
+  position: relative;      /* allows overlay positioning */
   border-radius: 10px;
+  overflow: hidden;        /* keeps image corners rounded */
   color: #fff;
   text-align: center;
 }
 
-/* small image thumbnails in cards */
 .card img {
- max-width: 1000px;
- width: 110%;
- height: 450px;
- object-fit: cover;
-  border-radius: 10px,
-  margin-bottom: 6rem;
+  width: 100%;             /* fills the card width */
+  height: 450px;           /* fixed height */
+  object-fit: cover;
+  display: block;          /* removes bottom gap */
+}
+
+/* overlay for text */
+.card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,   /* darker at bottom */
+    rgba(0, 0, 0, 0.0) 100%  /* transparent top */
+  );
 }
 /* Footer */
 footer {
