@@ -162,13 +162,13 @@ a { text-decoration: none; color: inherit; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   z-index: 1;
 }
 
 .card {
   position: relative;      /* allows overlay positioning */
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;        /* keeps image corners rounded */
   color: #000;
   text-align: center;
@@ -187,7 +187,7 @@ a { text-decoration: none; color: inherit; }
   bottom: 10;
   left: 0;
   right: 0;
-  padding: 1.5rem;
+  padding: 2.5rem 2rem;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.7) 0%,   /* darker at bottom */
