@@ -170,7 +170,7 @@ a { text-decoration: none; color: inherit; }
   position: relative;        /* allows overlay positioning */
   border-radius: 10px;
   overflow: hidden;          /* keeps image corners rounded */
-  color: #fff;               /* white text for contrast */
+  color: #000;               /* white text for contrast */
   text-align: center;
 }
 
