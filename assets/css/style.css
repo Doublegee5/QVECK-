@@ -81,7 +81,7 @@
 html, body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background: var(--primary-color);
-  color: var(--primary-color);
+  color: var(--secondary-color);
   line-height: 1.6;
   scroll-behavior: smooth;
   overflow-x: hidden;
