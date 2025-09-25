@@ -152,7 +152,7 @@ a { text-decoration: none; color: inherit; }
   border-bottom: 2px solid rgba(212,175,55,0.3);
 }
 
-#about, #services, #blog, #contact {
+#hero, #about, #services, #blog, #contact {
   background: linear-gradient(180deg, #000, #111);
   color: #eee;
 }
