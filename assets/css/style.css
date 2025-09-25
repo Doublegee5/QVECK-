@@ -137,7 +137,15 @@ a { text-decoration: none; color: inherit; }
   border: 2px solid var(--accent-color);
   box-shadow: 0 6px 25px rgba(212,175,55,0.8);
 }
-
+/* =========================
+   About Section
+========================= */
+#about {
+  background: url('assets/css/863EF021-6E9C-4FAE-8DAF-5D865AE497E1.png') center/cover no-repeat;
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
 /* =========================
    Sections 
 ========================= */
