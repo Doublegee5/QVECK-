@@ -8,6 +8,7 @@
   --text-color: #000000;
   --card-bg: rgba(0,0,0,0.72);
 }
+
 /* =========================
    Logo Section
 ========================= */
@@ -68,8 +69,6 @@
 .side-menu a:hover { background: var(--accent-color); }
 .side-menu.active { left: 0; }
 
-
-
 /* =========================
    Global Styles
 ========================= */
@@ -89,27 +88,42 @@ html, body {
 a { text-decoration: none; color: inherit; }
 
 /* =========================
-   Hero Section 
+   Hero Section (Radiant)
 ========================= */
 .hero {
-  background: ffffff;
+  background: linear-gradient(135deg, black, navy, red);
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--text-color);
+  color: var(--primary-color);
   padding: 0 2rem;
 }
-.hero-content h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero-content h1 { 
+  font-size: 3rem; 
+  margin-bottom: 1rem; 
+  text-shadow: 
+    0 0 10px red,
+    0 0 20px navy,
+    0 0 40px red;
+}
 .hero-content p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+
 .btn {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background: var(--accent-color);
+  background: linear-gradient(to right, navy, red);
   color: var(--primary-color);
   border-radius: 5px;
   font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7),
+              0 0 25px rgba(0, 0, 128, 0.7);
+  transition: 0.3s;
+}
+.btn:hover {
+  box-shadow: 0 0 35px rgba(255, 0, 0, 1),
+              0 0 45px rgba(0, 0, 128, 1);
 }
 
 /* =========================
@@ -125,30 +139,61 @@ a { text-decoration: none; color: inherit; }
 }
 
 #about {
+  position: relative;
   background-image: url("assets/css/863EF021-6E9C-4FAE-8DAF-5D865AE497E1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+#about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,128,0.6), rgba(255,0,0,0.6));
+}
 
 #services {
+  position: relative;
   background-image: url("assets/css/IMG_0211.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+#services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,128,0.6), rgba(255,0,0,0.6));
+}
+
 #blog {
+  position: relative;
   background-image: url("assets/css/IMG_0227.jpeg");
   background-position: center;
-  background-size:500px;
+  background-size: 500px;
   background-repeat: no-repeat;
 }
+#blog::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,128,0.6), rgba(255,0,0,0.6));
+}
+
 #contact {
+  position: relative;
   background-image: url("assets/css/Blog Section__•_Image Style_ Smart + innovative.__•_Blog 1 → Laptop + notebook + coffee.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+#contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,128,0.6), rgba(255,0,0,0.6));
+}
+
 .section-img {
   width: 100%;
   max-width: 1000px;
@@ -158,6 +203,7 @@ a { text-decoration: none; color: inherit; }
   border-radius: 8px;
   object-fit: cover;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -167,33 +213,34 @@ a { text-decoration: none; color: inherit; }
 }
 
 .card {
-  position: relative;        /* allows overlay positioning */
+  position: relative;
   border-radius: 10px;
-  overflow: hidden;          /* keeps image corners rounded */
-  color: #000;               /* white text for contrast */
+  overflow: hidden;
+  color: #000;
   text-align: center;
 }
-
 .card img {
-  width: 100%;               /* fills the card width */
-  height: 400px;             /* fixed height */
-  object-fit: cover;         /* avoids stretching */
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
   display: block;
 }
-
 .card .overlay {
   position: absolute;
-  bottom: 0;                 /* sits at bottom */
+  bottom: 0;
   left: 0;
   right: 0;
-  padding: 2rem;             /* breathing room for text */
+  padding: 2rem;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.7) 0%,   /* darker at bottom */
-    rgba(0, 0, 0, 0.0) 100%  /* fades upward */
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.0) 100%
   );
 }
-/* Footer */
+
+/* =========================
+   Footer
+========================= */
 footer {
   background: #000;
   padding: 2rem 1rem;
