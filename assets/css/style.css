@@ -94,6 +94,11 @@ html, body {
 }
 a { text-decoration: none; color: inherit; }
 
+/* Add global spacing for all text elements */
+p, h1, h2, h3, h4, h5, h6, a, button {
+  margin: 0.75rem 0;
+}
+
 /* =========================
    Hero Section (Luxury)
 ========================= */
@@ -130,6 +135,7 @@ a { text-decoration: none; color: inherit; }
   font-weight: bold;
   box-shadow: 0 4px 15px rgba(212,175,55,0.5);
   transition: 0.3s ease;
+  margin-top: 1rem; /* space above button */
 }
 .btn:hover {
   background: #000;
@@ -157,7 +163,7 @@ a { text-decoration: none; color: inherit; }
 }
 .section h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--accent-color);
 }
 .section p {
@@ -166,6 +172,7 @@ a { text-decoration: none; color: inherit; }
   max-width: 800px;
   margin: 0 auto 3rem auto;
   line-height: 1.8;
+  padding: 0 1rem; /* added side space for breathing room */
 }
 .section-img {
   width: 100%;
@@ -191,8 +198,9 @@ a { text-decoration: none; color: inherit; }
   background: var(--card-bg);
   color: #fff;
   text-align: center;
-  border: 2px solid rgba(212,175,55,0.3);
+  border: 1px solid rgba(212,175,55,0.3);
   transition: 0.3s ease;
+  padding-bottom: 1.5rem; /* space at bottom for text/button */
 }
 .card:hover {
   transform: scale(1.05);
@@ -210,8 +218,14 @@ a { text-decoration: none; color: inherit; }
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
+  padding: 2rem 1.5rem 3rem 1.5rem; /* added extra padding all around */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+.card p {
+  margin-bottom: 1.5rem; /* spacing before "Read More" */
+}
+.card .btn {
+  margin-top: 1rem; /* spacing after text */
 }
 
 /* =========================
